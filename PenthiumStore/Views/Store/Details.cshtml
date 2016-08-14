@@ -1,0 +1,28 @@
+﻿
+@using PenthiumStore.Models
+@model Product
+
+@{
+    ViewBag.Title = "Product - " + Model.Name;
+}
+<h2>@Model.Name</h2>
+
+<div id="album-details">
+    <p>
+        <em>Genre:</em>
+        @Model.category.Name
+    </p>
+    <p>
+        <em>Artist:</em>
+        @Model.manufacturer.Name
+    </p>
+    <p>
+        <em>Price:</em>
+        @String.Format("{0:F}",
+Model.ProductPrice)
+    </p>
+    <p class="button">
+        @Html.ActionLink("Add to cart", "AddToCart",
+        "ShoppingCart", new { id = Model.ProductId }, "")
+    </p>
+</div>

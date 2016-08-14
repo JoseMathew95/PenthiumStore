@@ -1,0 +1,26 @@
+﻿@using PenthiumStore.Models
+@model IEnumerable<Category>
+@{
+    ViewBag.Title = "Index";
+}
+<h3>Browse Categories</h3>
+<p>
+    Select from @Model.Count()
+</p>
+
+    @foreach (Category item in Model)
+    {
+            <div class="CategoryDisplaydiv">
+                <table>
+                    <tr>
+                        
+                        <td class="dishTable">
+                            @Html.ActionLink(item.Name, "Browse", new { Category = item.Name })
+                            <br />
+                        </td>
+                    </tr>
+
+                </table>
+
+            </div>
+    }

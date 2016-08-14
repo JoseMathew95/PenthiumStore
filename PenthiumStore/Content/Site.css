@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 20px;
 }
 
@@ -21,4 +21,37 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.navbar-custom {
+    color: #FFFFFF;
+    background-color: #003366;
+}
+
+.CategoryDisplaydiv {
+    width:49%;
+    height:120px;
+    text-align:center;
+    padding:8px;
+    display:inline-block;
+    border:solid;
+    border-color:#808080;
+    border-width:2px;
+    
+}
+
+.dishTable {
+    padding:10px;
+}
+
+.ProductDisplayDiv{
+    width:32%;
+    height:100%;
+    text-align:center;
+    margin:10px;
+    padding:15px;
+    display:inline-block;
+    border:solid;
+    border-color:#808080;
+    border-width:2px;
 }
