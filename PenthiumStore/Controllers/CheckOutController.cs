@@ -7,8 +7,7 @@ using PenthiumStore.Models;
 
 namespace PenthiumStore.Controllers
 {
-    public class CheckOutController : Controller
-    {
+
         [Authorize]
         public class CheckoutController : Controller
         {
@@ -78,4 +77,3 @@ namespace PenthiumStore.Controllers
             }
         }
     }
-}
