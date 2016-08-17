@@ -11,6 +11,7 @@ using PenthiumStore.Models;
 
 namespace PenthiumStore.Controllers
 {
+    [Authorize]
     public class StoreManagerController : Controller
     {
         private PenthiumContext db = new PenthiumContext();
