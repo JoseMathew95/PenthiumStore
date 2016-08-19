@@ -1,6 +1,18 @@
 ﻿@using PenthiumStore.Models
 @model Category
 
+@helper Truncate(string input, int length)
+{
+if (input.Length <= length)
+{
+        @input
+}
+else
+{
+        @input.Substring(0, length)<text>...</text>
+}
+}
+
 @{
     ViewBag.Title = "Browse";
 }
@@ -14,9 +26,14 @@
             <table>
                 <tr>
 
-                    <td class="dishTable">
-                       @Html.ActionLink(product.Name, "Details", new { id = product.ProductId })
+                    <td class="productTable">
+                       <img src="~/Assets/ProductImages/@product.ProductImage"/>
+                        <b> @Html.ActionLink(product.Name, "Details", new { id = product.ProductId })&nbsp;$@product.ProductPrice</b>
                         <br />
+                        <p>@Truncate(product.ProductDescription, 90)</p>
+                        <p class="btn btn-success" >
+                            @Html.ActionLink("Add to cart >>", "AddToCart","ShoppingCart", new { id = product.ProductId }, "")
+                        </p>
                     </td>
                 </tr>
 
