@@ -5,24 +5,36 @@
 @{
     ViewBag.Title = "Product - " + Model.Name;
 }
-<h2>@Model.Name</h2>
 
-<div id="album-details">
-    <p>
-        <em>Genre:</em>
-        @Model.category.Name
-    </p>
-    <p>
-        <em>Artist:</em>
-        @Model.manufacturer.Name
-    </p>
-    <p>
-        <em>Price:</em>
-        @String.Format("{0:F}",
-Model.ProductPrice)
-    </p>
-    <p class="button">
-        @Html.ActionLink("Add to cart", "AddToCart",
-        "ShoppingCart", new { id = Model.ProductId }, "")
-    </p>
+<div class="DetailsDisplayDiv">
+    <table >
+        <tr>
+            <td>
+                <img src="~/Assets/ProductImages/@Model.ProductImage" />
+            </td>
+            <td style="padding:15px" class="detailsContent">
+                <h2><b>@Model.Name &nbsp;$@Model.ProductPrice</b></h2>
+                <b><p>Manufactured by:&nbsp;@Model.manufacturer.Name  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Category: &nbsp;@Model.category.Name</p></b>
+                </br>
+                <table>
+                    <tr>
+                        <td><h3>$@Model.ProductPrice</h3></td>
+                        <p>Promotional Offer. Get it free, offer ends on 1/1/2099</p>
+                        <td>
+                            <ul>
+                                <li>Free shipping* on orders over $25 (excludes products with scheduled delivery)</li>
+                                <li>Promotional offer- Enter Promocode free</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                </br>
+
+                <p>@Model.ProductDescription</p>
+                <p class="btn btn-lg btn-primary">
+                    @Html.ActionLink("Add to cart", "AddToCart","ShoppingCart", new { id = Model.ProductId }, "")
+                </p>
+            </td>
+        </tr>
+    </table>
 </div>
