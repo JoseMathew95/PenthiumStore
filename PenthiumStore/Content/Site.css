@@ -31,7 +31,7 @@ textarea {
 
 .CategoryDisplaydiv {
     width:49%;
-    height:120px;
+    height:100%;
     text-align:center;
     padding:8px;
     display:inline-block;
@@ -39,6 +39,11 @@ textarea {
     border-color:#808080;
     border-width:2px;
     
+}
+
+div.CategoryDisplaydiv img{
+    width:100%;
+    height:100%;
 }
 
 .productTable {

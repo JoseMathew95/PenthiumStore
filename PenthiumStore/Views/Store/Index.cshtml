@@ -4,9 +4,6 @@
     ViewBag.Title = "Index";
 }
 <h3>Browse Categories</h3>
-<p>
-    Select from @Model.Count()
-</p>
 
     @foreach (Category item in Model)
     {
@@ -14,8 +11,15 @@
                 <table>
                     <tr>
                         
-                        <td class="dishTable">
-                            @Html.ActionLink(item.Name, "Browse", new { Category = item.Name })
+                        <td class="productTable">
+                            @if (item.Name == "Mobile Cases")
+                            {
+                                <a href="@Url.Action("Browse", new { Category = item.Name })"><img src="~/Assets/Images/mobilecases.png" /></a>
+                            }
+                            else if (item.Name == "Head Phones")
+                            {
+                                <a href="@Url.Action("Browse", new { Category = item.Name })"><img src="~/Assets/Images/headPhones.jpg" /></a>
+                            }
                             <br />
                         </td>
                     </tr>
