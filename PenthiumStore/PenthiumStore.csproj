@@ -201,10 +201,14 @@
     <Compile Include="ViewModels\ShoppingCartViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Images\headPhones.jpg" />
     <Content Include="Assets\Images\homeslider1.jpg" />
     <Content Include="Assets\Images\homeslider2.jpg" />
     <Content Include="Assets\Images\homeslider3.jpg" />
+    <Content Include="Assets\Images\memoryCard.jpg" />
+    <Content Include="Assets\Images\mobilecases.png" />
     <Content Include="Assets\Images\Penthium.png" />
+    <Content Include="Assets\Images\screenProtector.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -286,6 +290,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Assets\ProductImages\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

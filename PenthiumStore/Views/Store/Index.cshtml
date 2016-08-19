@@ -3,8 +3,6 @@
 @{
     ViewBag.Title = "Index";
 }
-<h3>Browse Categories</h3>
-
     @foreach (Category item in Model)
     {
             <div class="CategoryDisplaydiv">
@@ -15,10 +13,22 @@
                             @if (item.Name == "Mobile Cases")
                             {
                                 <a href="@Url.Action("Browse", new { Category = item.Name })"><img src="~/Assets/Images/mobilecases.png" /></a>
+                                <b>@item.Name</b>
                             }
                             else if (item.Name == "Head Phones")
                             {
                                 <a href="@Url.Action("Browse", new { Category = item.Name })"><img src="~/Assets/Images/headPhones.jpg" /></a>
+                                <b>@item.Name</b>
+                            }
+                            else if (item.Name == "Screen Protectors")
+                            {
+                                <a href="@Url.Action("Browse", new { Category = item.Name })"><img src="~/Assets/Images/screenProtector.jpg" /></a>
+                                <b>@item.Name</b>
+                            }
+                            else if (item.Name == "Memory Cards")
+                            {
+                                <a href="@Url.Action("Browse", new { Category = item.Name })"><img src="~/Assets/Images/memoryCard.jpg" /></a>
+                                <b>@item.Name</b>
                             }
                             <br />
                         </td>
