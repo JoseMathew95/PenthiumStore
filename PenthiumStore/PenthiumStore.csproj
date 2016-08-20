@@ -209,6 +209,7 @@
     <Content Include="Assets\Images\mobilecases.png" />
     <Content Include="Assets\Images\Penthium.png" />
     <Content Include="Assets\Images\screenProtector.jpg" />
+    <Content Include="Assets\ProductImages\iphoe5s-case.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -290,7 +291,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Assets\ProductImages\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

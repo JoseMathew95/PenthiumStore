@@ -24,11 +24,13 @@ textarea {
     max-width: 280px;
 }
 
+/* Change the color of the bootstrap navbar. */
 .navbar-custom {
     color: #FFFFFF;
     background-color: #003366;
 }
 
+/* set the properties of the div in the Products page */
 .CategoryDisplaydiv {
     width:49%;
     height:100%;
@@ -46,8 +48,9 @@ div.CategoryDisplaydiv img{
     padding:10px;
 }
 
+/* set the properties of the div in the product catalo gpage page */
 .ProductDisplayDiv{
-    width:23%;
+    width:22%;
     height:100%;
     text-align:center;
     margin:10px;
@@ -56,16 +59,18 @@ div.CategoryDisplaydiv img{
     
 }
 
-
+/* set the properties of the image element in the categories page page */
 div.ProductDisplayDiv img{
     height: 180px;
     width: 220px;
 }
 
+/* set the text color to black in the categories page page */
 div.ProductDisplayDiv a{
     color:black;
 }
 
+/* set the properties of the div in the product product details page */
 .DetailsDisplayDiv{
     width:100%;
     height:100%;
@@ -73,6 +78,7 @@ div.ProductDisplayDiv a{
     padding:15px;
 }
 
+/* set the properties of the image element in the details page page */
 div.DetailsDisplayDiv img{
     height: 450px;
     width: 550px;
@@ -82,6 +88,7 @@ div.DetailsDisplayDiv a{
     color:black;
 }
 
+/* set the color of h3 to red in the details page page */
 div.DetailsDisplayDiv h3{
     color:red;
 }

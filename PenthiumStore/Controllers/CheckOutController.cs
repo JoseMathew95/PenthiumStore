@@ -13,7 +13,7 @@ namespace PenthiumStore.Controllers
         {
             PenthiumContext storeDB = new PenthiumContext();
 
-            const string PromoCode = "FREE";
+            
             //
             // GET: /Checkout/AddressAndPayment
             public ActionResult AddressAndPayment()
@@ -30,13 +30,7 @@ namespace PenthiumStore.Controllers
 
                 try
                 {
-                    if (string.Equals(values["PromoCode"], PromoCode,
-                        StringComparison.OrdinalIgnoreCase) == false)
-                    {
-                        return View(order);
-                    }
-                    else
-                    {
+                    
                         order.Username = User.Identity.Name;
                         order.OrderDate = DateTime.Now;
 
@@ -49,7 +43,6 @@ namespace PenthiumStore.Controllers
 
                         return RedirectToAction("Complete",
                             new { id = order.OrderId });
-                    }
                 }
                 catch
                 {

@@ -11,15 +11,17 @@
     <fieldset>
         <legend>Payment</legend>
         <p>
-            We're running a promotion: all music is free
-            with the promo code: "FREE"
+            Choose a Payment Option
         </p>
         <div class="editor-label">
-            @Html.Label("Promo Code")
+            Credit Card: @Html.RadioButton("payment", "Credit")<br>
+            Debit Card: @Html.RadioButton("payment", "Debit")<br>
+            COD: @Html.RadioButton("payment", "COD")<br>
         </div>
         <div class="editor-field">
-            @Html.TextBox("PromoCode")
+            Address on the card.
+            @Html.TextBox("Enter Address on card.");
         </div>
     </fieldset>
-    <input type="submit" value="Submit Order" />
+    <input type="submit" value="Finalize Order" />
 }

@@ -30,7 +30,7 @@ else
                        <img src="~/Assets/ProductImages/@product.ProductImage"/>
                         <b> @Html.ActionLink(product.Name, "Details", new { id = product.ProductId })&nbsp;$@product.ProductPrice</b>
                         <br />
-                        <p>@Truncate(product.ProductDescription, 90)</p>
+                        <p>@Truncate(product.ProductDescription, 85)</p>
                         <p class="btn btn-primary" >
                             @Html.ActionLink("Add to cart >>", "AddToCart","ShoppingCart", new { id = product.ProductId }, "")
                         </p>
