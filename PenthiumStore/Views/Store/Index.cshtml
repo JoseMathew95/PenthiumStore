@@ -1,4 +1,12 @@
-﻿@using PenthiumStore.Models
+﻿<!--
+    modified by Jose Mathew
+    200298627
+    http://penthiummobilestore.azurewebsites.net/
+    this file contains the styling for the Product category browse page.
+-->
+
+
+@using PenthiumStore.Models
 @model IEnumerable<Category>
 @{
     ViewBag.Title = "Index";
@@ -8,7 +16,7 @@
             <div class="CategoryDisplaydiv">
                 <table>
                     <tr>
-                        
+                        <!--checking the item name and assigning the specified image to the item.-->
                         <td class="productTable">
                             @if (item.Name == "Mobile Cases")
                             {

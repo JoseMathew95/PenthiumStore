@@ -21,17 +21,17 @@ namespace PenthiumStore.Controllers
             return View(genres);
         }
         //
-        // GET: /Store/Browse?genre=Disco
+        // GET: /Store/Browse
 
         public ActionResult Browse(string Category = "Mobile cases")
         {
-            // Retrieve Genre and its Associated Albums from database
+            // Retrieve category and its Associated products from database
             Category category = storeDB.Categories.Include("Products").Single(g => g.Name == Category);
 
             return View(category);
         }
         //
-        // GET: /Store/Details/5
+        // GET: /Store/Details
 
         public ActionResult Details(int id = 1)
         {

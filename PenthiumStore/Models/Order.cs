@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+    modified by Jose Mathew
+    http://penthiummobilestore.azurewebsites.net/
+    this file defines the order table.
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;

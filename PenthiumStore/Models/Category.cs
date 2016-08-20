@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+    modified by Jose Mathew
+    http://penthiummobilestore.azurewebsites.net/
+    this file defines the category table.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
